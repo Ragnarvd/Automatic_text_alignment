@@ -90,10 +90,21 @@ class Bertalign:
             print(src_line + "\n" + tgt_line + "\n")
     
     def print_x_sents(self, n):
-        for i in range(n):
-            src_line = self._get_line(i[0], self.src_sents)
-            tgt_line = self._get_line(i[1], self.tgt_sents)
+        count = 0
+        for for bead in (self.results):
+            if count < n
+            src_line = self._get_line(bead[0], self.src_sents)
+            tgt_line = self._get_line(bead[1], self.tgt_sents)
             print(src_line + "\n" + tgt_line + "\n")
+            count += 1
+            
+    def dwn_sents(self):
+        f = open("output.txt", "w")
+        for bead in (self.result):
+            src_line = self._get_line(bead[0], self.src_sents)
+            tgt_line = self._get_line(bead[1], self.tgt_sents)
+            f.write(src_line + "\n" + tgt_line + "\n")
+        f.close()
 
     @staticmethod
     def _get_line(bead, lines):
